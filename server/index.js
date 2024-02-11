@@ -22,6 +22,9 @@ mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})
     .catch((error)=>console.log("fail to connect to MongoDB: "+error.message));
 
 app.get('/',(req,res)=>{
-    res.send('prasad');
-})
-// mongoose.set('useFindAndModify',false);
+    res.send("Prasad's Full Stack Project");
+});
+
+app.get('/hello',(req,res)=>{
+    res.send("hello dipak");
+});
